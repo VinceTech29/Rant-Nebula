@@ -4,8 +4,6 @@
 
 Rant Nebula is a simple interactive web app where users can type their thoughts or rants and watch them float around the screen as animated shapes. Each rant is saved in the browser and reappears the next time the page is opened.
 
----
-
 ## Features
 
 - Add unlimited rants  
@@ -15,7 +13,6 @@ Rant Nebula is a simple interactive web app where users can type their thoughts 
 - Minimal cosmic-themed UI  
 - Press **Enter** or click **RANT!** to submit  
 
----
 
 ## Built With
 
@@ -25,16 +22,15 @@ Rant Nebula is a simple interactive web app where users can type their thoughts 
 
 No frameworks. No libraries. Pure front-end implementation.
 
----
 
 ## Project Structure
+
+```
 Rant-Nebula/
 │── index.html
 │── style.css
 │── script.js
-
-
----
+```
 
 ## How It Works
 
@@ -48,7 +44,6 @@ Rant-Nebula/
 
 3. When the page reloads, saved rants are restored automatically.
 
----
 
 ## Core Logic
 
@@ -56,4 +51,49 @@ Rants are stored in an array:
 
 ```javascript
 let rants = JSON.parse(localStorage.getItem('rants')) || [];
+```
 
+- Each rant becomes a dynamically created `<div>`  
+- `requestAnimationFrame()` handles smooth floating animation  
+- Edge detection reverses movement direction  
+
+
+## Design Highlights
+
+- Dark nebula gradient background  
+- Soft glowing blue accents  
+- Radial gradient shapes  
+- Blurred glass-like effect  
+- Smooth hover transitions  
+
+## Installation
+
+Clone the repository:
+
+git clone https://github.com/your-username/rant-nebula.git
+```
+
+Open `index.html` in your browser.
+
+Start ranting.
+
+No setup required.
+
+
+## Future Improvements
+
+- Delete or clear all rants button  
+- Draggable rant shapes  
+- Different color themes  
+- User accounts & database storage  
+- Mobile gesture improvements  
+
+
+## Author
+
+Vincent  
+
+
+## License
+
+This project is open-source and free to use for learning purposes.
